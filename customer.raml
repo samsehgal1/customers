@@ -4,7 +4,7 @@ version: 1.0
 baseUri: http://localhost:8080/customer/{version}
 
 schemas:
-  - customer: !include schemas/customer.schema
+  - customer: !include customer.schema
 
 resourceTypes:
   - collection:
@@ -107,12 +107,12 @@ resourceTypes:
 /customers:
   type: 
     collection:
-      exampleCollection: !include samples/cms-include-customer-get.sample
-      exampleItem: !include samples/cms-include-customer-new.sample
+      exampleCollection: !include customer-get.sample
+      exampleItem: !include customer-new.sample
   /{customerId}:
     type: 
       collection-item:
-        exampleItem: !include samples/cms-include-customer-update.sample
+        exampleItem: !include customer-update.sample
 
 #/orders:
 #  type: 
