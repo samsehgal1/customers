@@ -1,4 +1,4 @@
-# customers
+# Customers API
 The system implements an API that allows CRUD operations on customers. RAML is used to implement the design spec of API. 
 The API is designed to support the following consumer use cases at a minimum:
 - A consumer may periodically (every 5 minutes) consume the API to enable it (the consumer) to maintain a copy of the provider API's customers (the API represents the system of record)
